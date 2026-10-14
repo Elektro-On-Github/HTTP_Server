@@ -1,0 +1,42 @@
+body {
+    background-color: #000000;
+    margin: 20px;
+}
+
+maintit {
+    color: #f55b02;
+    font-size: 32px;
+    font-family: "Liberation Mono", monospace;
+    font-weight: 900;
+}
+
+hr {
+    border: 1px solid #f55b02;
+    width: 100%;
+}
+
+.whitetext {
+    color: #ffffff;
+    font-size: 16px;
+    font-family: "Liberation Mono", monospace;
+    font-weight: 800;
+    display: block;
+}
+
+.orangetext {
+    color: #f55b02;
+    font-size: 16px;
+    font-family: "Liberation Mono", monospace;
+    font-weight: 800;
+    display: block;
+}
+
+.maintext {
+    color: #f55b02;
+    font-size: 60px;
+    font-family: "Liberation Mono", monospace;
+    font-weight: 800;
+    display: block;
+    width: 600px;
+    margin: 100px 100px 0px 100px;
+}
