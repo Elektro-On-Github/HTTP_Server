@@ -38,5 +38,24 @@ hr {
     font-weight: 800;
     display: block;
     width: 600px;
-    margin: 100px 100px 0px 100px;
+}
+
+.videotitle {
+    color: #ffffff;
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: "Liberation Mono", monospace;
+    font-weight: 800;
+    display: block;
+    width: 480px;
+}
+
+.date {
+    color: #cccccc;
+    margin-top: 8px;
+    font-size: 12px;
+    font-family: "Liberation Mono", monospace;
+    font-weight: 600;
+    display: block;
+    width: 480px;
 }
