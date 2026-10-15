@@ -59,3 +59,23 @@ hr {
     display: block;
     width: 480px;
 }
+
+.projecttitle {
+    color: #f55b02;
+    margin-top: 10px;
+    font-size: 28px;
+    font-family: "Liberation Mono", monospace;
+    font-weight: 800;
+    display: block;
+    width: 480px;
+}
+
+.projecttext {
+    color: #ffffff;
+    margin-top: 8px;
+    font-size: 12px;
+    font-family: "Liberation Mono", monospace;
+    font-weight: 600;
+    display: block;
+    width: 480px;
+}
