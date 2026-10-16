@@ -81,6 +81,7 @@ hr {
 }
 
 .outro-blockz {
+    gap: 16px;
     color: #f55b02;
     margin-top: 10px;
     border: 2px solid #f55b02;
@@ -90,4 +91,18 @@ hr {
     display: block;
     width: 300px;
     height: 260px;
+}
+
+.true-rendering {
+  image-rendering: pixelated;
+  /* Supporto per browser alternativi o vecchi */
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+outro {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 32px;
 }
