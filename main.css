@@ -103,6 +103,8 @@ hr {
 outro {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 24px;
     margin-top: 32px;
+    margin-right: 100px;
+    margin-left: 100px;
 }
