@@ -141,7 +141,7 @@ outro {
 
 social-blockz {
     display: flex;
-    allign-items: center;
+    align-items: center;
     gap: 12px;
     align-items: center;
     box-sizing: border-box;
