@@ -83,7 +83,6 @@ hr {
 .outro-blockz {
     gap: 16px;
     color: #f55b02;
-    margin-top: 10px;
     border: 2px solid #f55b02;
     font-size: 28px;
     font-family: "Liberation Mono", monospace;
@@ -104,7 +103,6 @@ outro {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-    margin-top: 32px;
     margin-right: 100px;
     margin-left: 100px;
 }
@@ -131,8 +129,8 @@ outro {
 }
 
 .fondoakafooter {
-    position: relative;
-    bottom: 0;
+    position: fixed;
+    bottom: 28px;
     left: 0;
     z-index: 1;
     box-sizing: border-box;
@@ -142,14 +140,17 @@ outro {
 }
 
 social-blockz {
-    gap: 16px;
+    display: flex;
+    allign-items: center;
+    gap: 12px;
+    align-items: center;
+    box-sizing: border-box;
     color: #f55b02;
-    margin-top: 10px;
-    border: 1px solid #f55b02;
+    border: none;
     font-size: 28px;
     font-family: "Liberation Mono", monospace;
     font-weight: 800;
-    display: block;
     width: 200px;
     height: 60px;
+    padding: 0 12px;
 }
