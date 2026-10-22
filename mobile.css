@@ -10,13 +10,21 @@
         overflow-x: clip;
     }
 
+    body:has(.fondoakafooter) {
+        padding-bottom: 88px;
+    }
+
     body > div:first-of-type {
-        margin: 40px 0 !important;
+        margin: 32px 0 !important;
+    }
+
+    maintit {
+        display: block;
     }
 
     .maintext {
         width: 100%;
-        font-size: clamp(30px, 9vw, 46px);
+        font-size: clamp(30px, 8vw, 48px);
         line-height: 1.12;
         overflow-wrap: anywhere;
     }
@@ -25,6 +33,12 @@
         margin-top: 12px !important;
         font-size: 16px !important;
         line-height: 1.5;
+    }
+
+    body > div:first-of-type > div[style*="display: flex"] {
+        width: 100%;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
     }
 
     body > div:first-of-type > div[style*="align-items: center"] {
@@ -50,7 +64,7 @@
         display: block;
         width: 100% !important;
         height: auto !important;
-        aspect-ratio: 24 / 13;
+        aspect-ratio: 16 / 9;
         object-fit: cover;
     }
 
@@ -61,18 +75,21 @@
     .videotitle,
     .date,
     .projecttitle,
-    .projecttext {
+    .projecttext,
+    .whoamitext {
         width: 100%;
+        max-width: 100%;
         overflow-wrap: anywhere;
     }
 
     .videotitle,
-    .projecttext {
+    .projecttext,
+    .whoamitext {
         line-height: 1.5;
     }
 
     .projecttitle {
-        font-size: clamp(22px, 7vw, 28px);
+        font-size: clamp(22px, 6vw, 28px);
         line-height: 1.2;
     }
 
@@ -80,6 +97,21 @@
         min-height: 44px;
         margin-top: 14px !important;
         cursor: pointer;
+    }
+
+    project > div[style*="display: flex"] {
+        flex-direction: column;
+        gap: 12px !important;
+    }
+
+    .whoami-stuff {
+        width: 100%;
+        height: auto;
+        font-size: 22px;
+    }
+
+    .whoami-stuff > div {
+        margin: 16px !important;
     }
 
     project button:focus-visible,
@@ -111,9 +143,22 @@
         margin-right: 16px !important;
         margin-left: 16px !important;
     }
+
+    social-blockz {
+        width: min(100%, 260px);
+    }
+
+    .fondoakafooter {
+        bottom: env(safe-area-inset-bottom);
+        padding: 8px 14px;
+    }
+
+    .fondoakafooter .date {
+        line-height: 1.4;
+    }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 380px) {
     body {
         margin: 12px;
     }
@@ -125,5 +170,9 @@
     body > div:first-of-type > div[style*="align-items: center"] .orangetext,
     body > div:first-of-type > div[style*="align-items: center"] a {
         font-size: 14px;
+    }
+
+    .whoami-stuff {
+        font-size: 18px;
     }
 }
