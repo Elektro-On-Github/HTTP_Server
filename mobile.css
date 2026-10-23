@@ -145,7 +145,21 @@
     }
 
     social-blockz {
-        width: min(100%, 260px);
+        width: 100%;
+    }
+
+    .terminal-content {
+        padding: 18px 14px;
+    }
+
+    .endpoint-row {
+        grid-template-columns: 78px minmax(0, 1fr);
+        gap: 8px;
+    }
+
+    .endpoint-handle {
+        display: block;
+        margin-left: 0;
     }
 
     .fondoakafooter {
