@@ -7,19 +7,15 @@
 
     body {
         margin: 14px;
-        overflow-x: clip;
-    }
-
-    body:has(.fondoakafooter) {
-        padding-bottom: 88px;
-    }
-
-    body > div:first-of-type {
-        margin: 32px 0 !important;
+        overflow-x: hidden;
     }
 
     maintit {
         display: block;
+    }
+
+    body > div:first-of-type {
+        margin: 32px 0 !important;
     }
 
     .maintext {
@@ -31,7 +27,7 @@
 
     body > div:first-of-type > span.whitetext {
         margin-top: 12px !important;
-        font-size: 16px !important;
+        font-size: 14px !important;
         line-height: 1.5;
     }
 
@@ -96,7 +92,6 @@
     project button {
         min-height: 44px;
         margin-top: 14px !important;
-        cursor: pointer;
     }
 
     project > div[style*="display: flex"] {
@@ -112,12 +107,6 @@
 
     .whoami-stuff > div {
         margin: 16px !important;
-    }
-
-    project button:focus-visible,
-    a:focus-visible {
-        outline: 2px solid #f55b02;
-        outline-offset: 4px;
     }
 
     body > div:first-of-type > hr {
@@ -145,31 +134,20 @@
     }
 
     social-blockz {
-        width: min(100%, 260px);
+        width: 100%;
+        height: auto;
     }
 
-    .fondoakafooter {
-        bottom: env(safe-area-inset-bottom);
-        padding: 8px 14px;
-    }
-
-    .fondoakafooter .date {
-        line-height: 1.4;
+    social-blockz pre {
+        font-size: clamp(10px, 2.8vw, 12px);
+        white-space: pre-wrap;
+        overflow-wrap: anywhere;
     }
 }
 
 @media (max-width: 380px) {
     body {
         margin: 12px;
-    }
-
-    body > div:first-of-type > div[style*="align-items: center"] {
-        column-gap: 8px !important;
-    }
-
-    body > div:first-of-type > div[style*="align-items: center"] .orangetext,
-    body > div:first-of-type > div[style*="align-items: center"] a {
-        font-size: 14px;
     }
 
     .whoami-stuff {
