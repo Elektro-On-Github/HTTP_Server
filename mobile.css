@@ -1,156 +1,178 @@
 @media (max-width: 700px) {
-    *,
-    *::before,
-    *::after {
-        box-sizing: border-box;
-    }
+	*,
+	*::before,
+	*::after {
+		box-sizing: border-box;
+	}
 
-    body {
-        margin: 14px;
-        overflow-x: hidden;
-    }
+	html {
+		-webkit-text-size-adjust: 100%;
+		text-size-adjust: 100%;
+	}
 
-    maintit {
-        display: block;
-    }
+	body {
+		margin: 14px;
+		overflow-x: hidden;
+	}
 
-    body > div:first-of-type {
-        margin: 32px 0 !important;
-    }
+	maintit {
+		display: block;
+		line-height: 1.2;
+	}
 
-    .maintext {
-        width: 100%;
-        font-size: clamp(30px, 8vw, 48px);
-        line-height: 1.12;
-        overflow-wrap: anywhere;
-    }
+	body > hr {
+		width: 100%;
+		margin: 12px 0;
+	}
 
-    body > div:first-of-type > span.whitetext {
-        margin-top: 12px !important;
-        font-size: 14px !important;
-        line-height: 1.5;
-    }
+	body > button.orangetext {
+		width: min(100%, 150px) !important;
+		min-height: 44px;
+		height: auto !important;
+	}
 
-    body > div:first-of-type > div[style*="display: flex"] {
-        width: 100%;
-        margin-right: 0 !important;
-        margin-left: 0 !important;
-    }
+	body > div[style*="justify-content: space-between"] {
+		flex-wrap: wrap;
+		gap: 10px;
+		margin-top: 12px !important;
+	}
 
-    body > div:first-of-type > div[style*="align-items: center"] {
-        flex-wrap: wrap;
-        gap: 10px !important;
-        margin-top: 40px !important;
-    }
+	body > div[style*="justify-content: space-between"] > button {
+		flex: 1 1 130px;
+		width: auto !important;
+		min-width: 0;
+		min-height: 44px;
+		height: auto !important;
+		margin-top: 0 !important;
+	}
 
-    body > div:first-of-type > div[style*="align-items: center"] hr {
-        flex: 1 1 32px;
-    }
+	body > div[style*="margin: 100px"] {
+		margin: 32px 0 40px !important;
+	}
 
-    video1,
-    project {
-        display: block;
-        width: 100%;
-        max-width: 480px;
-        min-width: 0;
-    }
+	body > div[style*="margin: 100px"] > div[style*="display: flex"] {
+		width: 100%;
+		margin-right: 0 !important;
+		margin-left: 0 !important;
+	}
 
-    video1 iframe,
-    project img {
-        display: block;
-        width: 100% !important;
-        height: auto !important;
-        aspect-ratio: 16 / 9;
-        object-fit: cover;
-    }
+	body > div[style*="margin: 100px"] > div[style*="justify-content: center"] {
+		gap: 20px;
+	}
 
-    project img {
-        margin-top: 8px !important;
-    }
+	.maintext {
+		width: 100%;
+		max-width: 100%;
+		font-size: 40px;
+		line-height: 1.1;
+		overflow-wrap: anywhere;
+	}
 
-    .videotitle,
-    .date,
-    .projecttitle,
-    .projecttext,
-    .whoamitext {
-        width: 100%;
-        max-width: 100%;
-        overflow-wrap: anywhere;
-    }
+	.videotitle,
+	.date,
+	.projecttitle,
+	.projecttext,
+	.whoamitext {
+		width: 100% !important;
+		max-width: 100%;
+		overflow-wrap: anywhere;
+	}
 
-    .videotitle,
-    .projecttext,
-    .whoamitext {
-        line-height: 1.5;
-    }
+	.projecttitle {
+		font-size: 24px;
+		line-height: 1.2;
+	}
 
-    .projecttitle {
-        font-size: clamp(22px, 6vw, 28px);
-        line-height: 1.2;
-    }
+	video1,
+	project {
+		display: block;
+		width: 100%;
+		max-width: 480px;
+		min-width: 0;
+	}
 
-    project button {
-        min-height: 44px;
-        margin-top: 14px !important;
-    }
+	video1 iframe,
+	project img {
+		display: block;
+		width: 100% !important;
+		height: auto !important;
+		aspect-ratio: 16 / 9;
+		object-fit: contain;
+	}
 
-    project > div[style*="display: flex"] {
-        flex-direction: column;
-        gap: 12px !important;
-    }
+	project img {
+		margin-top: 12px !important;
+	}
 
-    .whoami-stuff {
-        width: 100%;
-        height: auto;
-        font-size: 22px;
-    }
+	project > div[style*="align-items: flex-start"] {
+		flex-direction: column;
+		width: 100%;
+	}
 
-    .whoami-stuff > div {
-        margin: 16px !important;
-    }
+	project .whoamitext br {
+		display: none;
+	}
 
-    body > div:first-of-type > hr {
-        margin-top: 36px !important;
-        margin-bottom: 36px !important;
-    }
+	.whoamitext p {
+		margin: 0 0 16px;
+	}
 
-    outro {
-        width: 100%;
-        margin: 20px 0 0;
-        gap: 14px;
-    }
+	.whoami-stuff {
+		width: 100%;
+		max-width: 420px;
+		height: auto;
+		min-height: 0;
+		padding: 16px;
+	}
 
-    .outro-blockz {
-        width: 100%;
-        height: auto;
-        min-height: 190px;
-        padding: 8px 0 18px;
-        overflow-wrap: anywhere;
-    }
+	.whoami-stuff > div {
+		margin: 0 !important;
+	}
 
-    .outro-blockz > * {
-        margin-right: 16px !important;
-        margin-left: 16px !important;
-    }
+	outro {
+		width: 100%;
+		margin-right: 0;
+		margin-left: 0;
+		gap: 14px;
+	}
 
-    social-blockz {
-        width: 100%;
-        height: auto;
-    }
+	.outro-blockz {
+		flex: 1 1 220px;
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+		min-height: 220px;
+		padding-bottom: 16px;
+	}
 
-    social-blockz pre {
-        font-size: clamp(10px, 2.8vw, 12px);
-        white-space: pre-wrap;
-        overflow-wrap: anywhere;
-    }
+	social-blockz {
+		width: 100%;
+		max-width: 600px;
+		height: auto;
+		min-height: 200px;
+		overflow-wrap: anywhere;
+	}
+
+	social-blockz pre {
+		white-space: pre-wrap;
+		overflow-wrap: anywhere;
+	}
+
+	social-blockz a {
+		overflow-wrap: anywhere;
+	}
 }
 
 @media (max-width: 380px) {
-    body {
-        margin: 12px;
-    }
+	body {
+		margin: 12px;
+	}
 
-    .whoami-stuff {
-        font-size: 18px;
-    }
+	.maintext {
+		font-size: 34px;
+	}
+
+	.projecttitle {
+		font-size: 22px;
+	}
 }
